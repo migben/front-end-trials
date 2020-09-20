@@ -1,0 +1,40 @@
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+h3 {
+    text-align: center;
+    width:  100%;
+}
+
+.grid {
+    margin-top: 50px;
+    width: 288px;
+    height: 288px;
+    border: solid yellowgreen 8px;
+    border-radius: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+
+}
+
+.grid div {
+    width: 30px;
+    height: 30px;
+    border: solid black 0.5px;
+}
+
+.even {
+    background-color: #ff414d;
+}
+
+.odd {
+    background-color: #9d65c9;
+}
