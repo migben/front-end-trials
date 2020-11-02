@@ -20,7 +20,12 @@ function addEntryToDom(event) {
     entriesNav.appendChild(displayEntryButton)
 
     displayEntryButton.addEventListener('click', function(){
+        const allEntries = document.querySelectorAll('.single-entry')
         entryDiv.style.display = 'block'
+
+        for(let i = 0; i < allEntries.length; i++){
+            allEntries[i].style.display = 'none'
+        }
     })
 
     count++
